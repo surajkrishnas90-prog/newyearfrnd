@@ -1,91 +1,102 @@
-<!DOCTYPE html>
-<html>
+<!DOCzTYPE html>
+<html lang="en">
 <head>
-    <title>Tap the Gift</title>
+<meta charset="UTF-8">
+<title>Happy New Year</title>
 
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background-image: url("456.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
+<!-- Google Font for Heading -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-        .content {
-            text-align: center;
-            text-shadow: 0 0 8px black;
-        }
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background-image: url("gift.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
 
-        .gift-box {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            margin: auto;
-            cursor: pointer;
-        }
+    .card {
+        background: rgba(255, 255, 255, 0.92);
+        padding: 35px;
+        width: 360px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+        animation: fadeIn 2s;
+    }
 
-        .gift-cover {
-            position: absolute;
-            inset: 0;
-            background-image: url("Giftbox.jpg");
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-            border: 3px solid white;
-        }
+    h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 42px;
+        color: #c0392b;
+        margin-bottom: 15px;
+    }
 
-        .reveal {
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            display: none;
-        }
+    p {
+        font-size: 18px;
+        color: #444;
+    }
 
-        .message {
-            display: none;
-            margin-top: 20px;
-        }
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 24px;
+        background: #c0392b;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
 
-        h2 {
-            color: #ffcc00;
+    .btn:hover {
+        background: #a93226;
+        transform: scale(1.05);
+    }
+
+    .footer {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #777;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.85);
         }
-    </style>
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
 </head>
 
 <body>
 
-<div class="content">
+<div class="card">
+    <h1>Happy New Year 2026</h1>
 
-    <p>👇 Tap the Gift 👇</p>
+    <p>
+        May this New Year bring you joy,<br>
+        peace, and beautiful moments 💖
+    </p>
 
-    <div class="gift-box" onclick="openGift()">
-        <div class="gift-cover" id="cover"></div>
-        <img src="Mandi.jpg" class="reveal" id="surprise">
+    <a href="hey.html" class="btn" target="_blank">
+        Take the Gift 🎁
+    </a>
+
+    <div class="footer">
+        — From your ammu ✨
     </div>
-
-    <div class="message" id="message">
-        <h2>HAPPY NEWYEAR MY FRIENDS🎉</h2>
-        <p>
-            May this New Year bring joy,  
-            success, love, and happiness ✨ here is your gift 
-        </p>
-    </div>
-
 </div>
-
-<script>
-function openGift() {
-    document.getElementById("cover").style.display = "none";
-    document.getElementById("surprise").style.display = "block";
-    document.getElementById("message").style.display = "block";
-}
-</script>
 
 </body>
 </html>
