@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Name</title>
+
+    <style>
+        body {
+            background-image: url("background.jpg"); /* image name */
+            background-size: cover;      /* fit screen */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.8); /* transparent white */
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #ff5e78;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Enter Your Name</h2>
+
+    <input type="text" id="name" placeholder="Enter your name"
+           onkeydown="if(event.key==='Enter') goNext()">
+    <br><br>
+    <button onclick="goNext()">OK</button>
+</div>
+
+<script>
+function goNext() {
+    var name = document.getElementById("name").value.trim().toLowerCase();
+
+    var pages = {
+        "Abhina": "abhina.html",
+        "Anju": "anju.html",
+        "Srekuttan": "srekuttan.html",
+        "Suraj": "suraj.html",
+        "Devika": "devika.html",
+        "Nayana": "nayana.html",
+        "Anzila": "anzila.html",
+        "Alwin": "alwin.html",,
+        "Abhirami": "abhirami.html"
+    };
+
+    if (pages[name]) {
+        window.location.href = pages[name];
+    } else {
+        window.location.href = "default.html";
+    }
+}
+</script>
+
+</body>
+</html>
