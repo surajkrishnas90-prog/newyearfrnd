@@ -5,8 +5,8 @@
 
     <style>
         body {
-            background-image: url("background.jpg"); /* image name */
-            background-size: cover;      /* fit screen */
+            background-image: url("https://raw.githubusercontent.com/kuamrutha3007-debug/First-website-of-ammu/main/background.jpg");
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
@@ -19,7 +19,7 @@
         }
 
         .box {
-            background: rgba(255, 255, 255, 0.8); /* transparent white */
+            background: rgba(255, 255, 255, 0.85);
             padding: 30px;
             border-radius: 15px;
             text-align: center;
@@ -30,6 +30,7 @@
             width: 200px;
             border-radius: 8px;
             border: none;
+            font-size: 16px;
         }
 
         button {
@@ -60,21 +61,21 @@ function goNext() {
     var name = document.getElementById("name").value.trim().toLowerCase();
 
     var pages = {
-        "Abhina": "abhina.html",
-        "Anju": "anju.html",
-        "Srekuttan": "srekuttan.html",
-        "Suraj": "suraj.html",
-        "Devika": "devika.html",
-        "Nayana": "nayana.html",
-        "Anzila": "anzila.html",
-        "Alwin": "alwin.html",,
-        "Abhirami": "abhirami.html"
+        "abhina": "abhina.html",
+        "anju": "anju.html",
+        "srekuttan": "srekuttan.html",
+        "suraj": "suraj.html",
+        "devika": "devika.html",
+        "nayana": "nayana.html",
+        "anzila": "anzila.html",
+        "alwin": "alwin.html",
+        "abhirami": "abhirami.html"
     };
 
     if (pages[name]) {
         window.location.href = pages[name];
     } else {
-        window.location.href = "default.html";
+        window.location.href = "index.html";
     }
 }
 </script>
