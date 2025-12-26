@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +7,7 @@
         body {
             margin: 0;
             height: 100vh;
-            background-image: url("456.jpg");
+            background-image: url("https://raw.githubusercontent.com/kuamrutha3a007-debug/First-website-of-ammu/refs/heads/main/456.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -35,7 +33,7 @@
         .gift-cover {
             position: absolute;
             inset: 0;
-            background-image: url("Giftbox.jpg");
+            background-image: url("https://raw.githubusercontent.com/kuamrutha3a007-debug/First-website-of-ammu/refs/heads/main/Giftbox.jpg");
             background-size: cover;
             background-position: center;
             border-radius: 15px;
@@ -47,11 +45,13 @@
             height: 100%;
             border-radius: 15px;
             display: none;
+            object-fit: cover;
         }
 
         .message {
             display: none;
             margin-top: 20px;
+            max-width: 320px;
         }
 
         h2 {
@@ -68,15 +68,17 @@
 
     <div class="gift-box" onclick="openGift()">
         <div class="gift-cover" id="cover"></div>
-        <img src="sura.jpg" class="reveal" id="surprise">
+        <img src="https://raw.githubusercontent.com/kuamrutha3a007-debug/First-website-of-ammu/refs/heads/main/Sura.jpg"
+             class="reveal" id="surprise" alt="Suraj">
     </div>
 
     <div class="message" id="message">
-        <h2>HAPPY NEWYEAR GEEKSU10🎉</h2>
+        <h2>HAPPY NEW YEAR GEEKSU10 🎉</h2>
         <p>
-            May this New Year bring joy,  
-            success, love, and happiness ✨  can't believe we're another year older (but still kids at heart, right? 😂). Thanks for being my partner in fun and all the crazy memories! Here's to many more adventures, laughter, and making new ones 🥂. Love you!"
-             
+            May this New Year bring joy, success, love, and happiness ✨<br><br>
+            Can't believe we're another year older (but still kids at heart, right? 😂).  
+            Thanks for being my partner in fun and all the crazy memories!  
+            Here's to many more adventures, laughter, and new memories 🥂💖
         </p>
     </div>
 
