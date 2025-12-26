@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tap the Gift</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("456.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content {
+            text-align: center;
+            text-shadow: 0 0 8px black;
+        }
+
+        .gift-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .gift-cover {
+            position: absolute;
+            inset: 0;
+            background-image: url("Giftbox.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            border: 3px solid white;
+        }
+
+        .reveal {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            display: none;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+
+    <p>👇 Tap the Gift 👇</p>
+
+    <div class="gift-box" onclick="openGift()">
+        <div class="gift-cover" id="cover"></div>
+        <img src="sura.jpg" class="reveal" id="surprise">
+    </div>
+
+    <div class="message" id="message">
+        <h2>HAPPY NEWYEAR GEEKSU10🎉</h2>
+        <p>
+            May this New Year bring joy,  
+            success, love, and happiness ✨  can't believe we're another year older (but still kids at heart, right? 😂). Thanks for being my partner in fun and all the crazy memories! Here's to many more adventures, laughter, and making new ones 🥂. Love you!"
+             
+        </p>
+    </div>
+
+</div>
+
+<script>
+function openGift() {
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("surprise").style.display = "block";
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
